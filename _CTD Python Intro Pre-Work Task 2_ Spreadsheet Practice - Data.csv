@@ -1,0 +1,16 @@
+Name,Nathan Bryant,,,,,,,
+Description,"This shows 3 cities and the highest, lowest, and average weather of each season and a month",,,,,,,
+,,,,,,,,
+City,Month,Season,Average High (F),Average Low (F),Average Precip. (in),,City,Year Average High
+"Raleigh, NC",January,Winter,50,30,3.4,,"Raleigh, NC",70.5
+"Raleigh, NC",April,Spring,70,47,3.2,,"Seattle, WA",60.25
+"Raleigh, NC",July,Summer,90,69,4.5,,"Phoenix, AZ",88.25
+"Raleigh, NC",October,Fall,72,49,3.1,,,
+"Seattle, WA",January,Winter,47,36,5.6,,"Students, Add:",
+"Seattle, WA",April,Spring,58,43,3.5,,,
+"Seattle, WA",July,Summer,77,57,0.6,,,
+"Seattle, WA",October,Fall,59,45,3.5,,,
+"Phoenix, AZ",January,Winter,67,44,0.8,,,
+"Phoenix, AZ",April,Spring,88,61,0.3,,,
+"Phoenix, AZ",July,Summer,106,83,1.0,,,
+"Phoenix, AZ",October,Fall,92,65,0.6,,,
