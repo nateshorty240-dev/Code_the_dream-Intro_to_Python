@@ -3,7 +3,7 @@ name = input("what your name")
 age = input("whats your age")  
 print(name, age)
 age_as_int = int(age) 
-
+# tried to do something random lol
 if age_as_int > 100:
 	print("false") 
 elif age_as_int > 0: 
