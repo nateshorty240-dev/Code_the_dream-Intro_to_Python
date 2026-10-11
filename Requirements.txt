@@ -1,0 +1,68 @@
+Step 1 – Choose an API
+Choose one of the three options below. All are free, require no API key, and return data that works well for this project.
+
+Option 1: Countries (countries.dev)
+A database of every country in the world, with data on population, area, region, languages, capital city, and more.
+
+Base endpoint: https://countries.dev/countries
+CLI ideas: filter countries by region, find the largest or most populous country, compare two countries side by side
+Docs: https://countries.dev/docs
+Option 2: Open Library Search
+A search API for books and authors. Query by author, title, or subject and get a list of matching books with publication year, subject tags, and page count.
+
+Base endpoint: https://openlibrary.org/search.json?author=tolkien
+CLI ideas: search for books by author or subject, filter by decade, look up a specific title
+Docs: https://openlibrary.org/developers/api
+Option 3: PokeAPI
+A complete Pokémon database with stats (HP, attack, defense, speed, special attack, special defense), types, and abilities for every Pokémon.
+
+Base endpoint: https://pokeapi.co/api/v2/pokemon/{name} (look up one Pokémon at a time by name)
+CLI ideas: look up a Pokémon by name, compare the stats of two Pokémon, filter a list by type
+Docs: https://pokeapi.co/docs/v2
+Note: Unlike the other two options, PokeAPI requires a separate HTTP request for each Pokémon you want data on. This is a common real-world API pattern, but it’s worth knowing before you start. Look up “looping API requests Python” if you haven’t done this before.
+
+Step 2 – Explore Your API
+Open your API’s base URL directly in a browser and read the raw JSON response before opening your code editor. You’re looking to answer four questions:
+
+Is the top-level response a list, or a dict with a list inside it?
+What fields does each record have?
+Are any fields nested — dicts inside dicts, or lists inside dicts?
+Are any fields missing or null for some records?
+Write your answers down. You’ll use them in the next step.
+
+Tip: Install a browser extension like JSON Formatter to make raw JSON easier to read.
+
+Step 3 – Plan Your Project
+Before writing any code, write a one-paragraph description of what your finished tool will do. Be specific: what input will the user provide, what data will come back, and how will it be formatted? For example:
+
+“A user runs the program and is prompted to enter a region name. The tool fetches all countries from the countries.dev API, filters to those in the matching region, and prints each country’s name, population, and area in a readable format. If the user enters an empty string or a region with no matches, the program prints a helpful message instead of crashing.”
+
+Once you’ve written your description, check it against the rubric. Ask yourself:
+
+Does my plan use at least 3 fields from the API?
+Does it include at least one meaningful user interaction?
+Have I accounted for at least two error cases?
+Will my plan naturally lead to organized, modular code, or am I planning to put everything in main()?
+If your plan doesn’t satisfy the rubric on paper, it won’t satisfy it in code. Adjust before you start.
+
+Step 4 – Build
+API Integration
+Fetch live data using the requests library
+Parse the response into a list of dictionaries
+Use at least 3 fields from the API in your program
+CLI Functionality
+Accept user input via input() or argparse
+Implement at least one meaningful interaction: filtering by a field, looking up a specific record, or comparing two records side by side
+Display results in readable, formatted output — not raw dictionary output
+Error Handling
+Wrap network calls in try/except blocks
+Handle unexpected user input (empty input, no matching results, invalid types where applicable) without crashing
+Code Quality
+Organize logic into functions with single responsibilities
+Avoid putting everything in main(). Fetching, processing, and displaying should be separate functions
+Deliverables
+A GitHub repository containing:
+
+main.py and any supporting modules
+requirements.txt
+README.md describing what your tool does, which API you used, and how to run it
